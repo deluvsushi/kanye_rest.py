@@ -15,7 +15,7 @@ class KanyeRest:
 	def get_random_quote_as_text(self):
 		return get(
 			f"{self.api}/text",
-			headers=self.headers).json()
+			headers=self.headers).text
 
 	def get_all_quotes(self):
 		return get(
